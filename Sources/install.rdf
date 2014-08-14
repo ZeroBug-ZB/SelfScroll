@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	
+	<Description about="urn:mozilla:install-manifest">
+		
+		<em:id>selfscroll@zerobug</em:id>
+		<em:version>1.2</em:version>
+		<em:type>2</em:type>
+		<em:name>SelfScroll</em:name>
+		<em:creator>ZeroBug</em:creator>
+		<em:description>This extension allow to automatically scroll the page with a custom speed. It also possible to configure the action to execute at the end of the page or at a specific pixel offset. Is possible to configure up to 10 different settings to run in different browser windows (suitable for multi-screen).
+
+The base code come from the ScrollyFox extension, but due of the lack of contacts and updates I was forced to create a new one instead of contributing to the existing.
+
+Contact: zerobug@email.com</em:description>
+		
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>1.5</em:minVersion>
+				<em:maxVersion>10.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+		
+	</Description>      
+	
+</RDF>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<prefwindow id="selfscroll-pref_window" title="SelfScroll Preferences" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" buttons="accept,cancel" buttonlabelcancel="Cancel" buttonlabelaccept="Save" onload="selfscroll.SetTitle(2)">
+	<script type="text/javascript" src="chrome://selfscroll/content/selfscroll.js"></script>
+	<prefpane label="SelfScroll Preferences">
+		<preferences>
+			<preference id="selfscroll-scrolling-speed2" name="extensions.selfscroll.scrollspeed2" type="int" />
+			<preference id="selfscroll-scrolling-offset2" name="extensions.selfscroll.scrolloffset2" type="int" />
+			<preference id="selfscroll-scrolling-fallback2" name="extensions.selfscroll.fallback2" type="int" />
+			<preference id="selfscroll-scrolling-startpause2" name="extensions.selfscroll.startpause2" type="int" />
+			<preference id="selfscroll-scrolling-endpause2" name="extensions.selfscroll.endpause2" type="int" />
+			<preference id="selfscroll-action2" name="extensions.selfscroll.action2" type="string" />
+			<preference id="selfscroll-scrolling-saveas2" name="extensions.selfscroll.saveas2" type="string" />
+		</preferences>
+		
+		<grid>
+			<columns>
+				<column flex="8" />
+				<column flex="1" />
+			</columns>
+			<rows>
+				<row flex="1">
+					<label control="scrolling-speed-textbox2" value="Scrolling Speed:" />
+					<textbox id="scrolling-speed-textbox2" type="number" preference="selfscroll-scrolling-speed2" min="1" max="100" size="2" />
+				</row>
+				<row flex="1">
+					<label control="scrolling-offset-textbox2" value="Scrolling Offset:" />
+					<textbox id="scrolling-offset-textbox2" type="number" preference="selfscroll-scrolling-offset2" size="2" />
+				</row>
+				<row flex="1">
+					<label control="scrolling-fallback-textbox2" value="Scrolling FallBack:" />
+					<textbox id="scrolling-fallback-textbox2" type="number" preference="selfscroll-scrolling-fallback2" min="1" size="2" />
+				</row>
+				<row flex="1">
+					<label control="scrolling-startpause-textbox2" value="Scrolling Start Pause:" />
+					<textbox id="scrolling-startpause-textbox2" type="number" preference="selfscroll-scrolling-startpause2" size="2" />
+				</row>
+				<row flex="1">
+					<label control="scrolling-endpause-textbox2" value="Scrolling End Pause:" />
+					<textbox id="scrolling-endpause-textbox2" type="number" preference="selfscroll-scrolling-endpause2" size="2" />
+				</row>
+				<row flex="1">
+					<label value="Scrolling End Action:" />
+					<radiogroup preference="selfscroll-action2">
+						<radio id="stop2" value="stop" label="Stop scrolling" />
+						<radio id="reverse2" value="reverse" label="Reverse the scroll direction" />
+						<radio id="top2" value="top" label="Return to the top of the page" />
+						<radio id="refresh2" value="refresh" label="Reload the page" />
+					</radiogroup>
+				</row>
+				<row flex="1">
+					<label control="scrolling-saveas-textbox2" value="Save As:" />
+					<textbox id="scrolling-saveas-textbox2" preference="selfscroll-scrolling-saveas2" />
+				</row>
+			</rows>
+		</grid>
+		
+	</prefpane>
+	
+</prefwindow>

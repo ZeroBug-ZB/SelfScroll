@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<prefwindow id="selfscroll-pref_window" title="SelfScroll Preferences" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" buttons="accept,cancel" buttonlabelcancel="Cancel" buttonlabelaccept="Save" onload="selfscroll.SetTitle(6)">
+	<script type="text/javascript" src="chrome://selfscroll/content/selfscroll.js"></script>
+	<prefpane label="SelfScroll Preferences">
+		<preferences>
+			<preference id="selfscroll-scrolling-speed6" name="extensions.selfscroll.scrollspeed6" type="int" />
+			<preference id="selfscroll-scrolling-offset6" name="extensions.selfscroll.scrolloffset6" type="int" />
+			<preference id="selfscroll-scrolling-fallback6" name="extensions.selfscroll.fallback6" type="int" />
+			<preference id="selfscroll-scrolling-startpause6" name="extensions.selfscroll.startpause6" type="int" />
+			<preference id="selfscroll-scrolling-endpause6" name="extensions.selfscroll.endpause6" type="int" />
+			<preference id="selfscroll-action6" name="extensions.selfscroll.action6" type="string" />
+			<preference id="selfscroll-scrolling-saveas6" name="extensions.selfscroll.saveas6" type="string" />
+		</preferences>
+		
+		<grid>
+			<columns>
+				<column flex="8" />
+				<column flex="1" />
+			</columns>
+			<rows>
+				<row flex="1">
+					<label control="scrolling-speed-textbox6" value="Scrolling Speed:" />
+					<textbox id="scrolling-speed-textbox6" type="number" preference="selfscroll-scrolling-speed6" min="1" max="100" size="2" />
+				</row>
+				<row flex="1">
+					<label control="scrolling-offset-textbox6" value="Scrolling Offset:" />
+					<textbox id="scrolling-offset-textbox6" type="number" preference="selfscroll-scrolling-offset6" size="2" />
+				</row>
+				<row flex="1">
+					<label control="scrolling-fallback-textbox6" value="Scrolling FallBack:" />
+					<textbox id="scrolling-fallback-textbox6" type="number" preference="selfscroll-scrolling-fallback6" min="1" size="2" />
+				</row>
+				<row flex="1">
+					<label control="scrolling-startpause-textbox6" value="Scrolling Start Pause:" />
+					<textbox id="scrolling-startpause-textbox6" type="number" preference="selfscroll-scrolling-startpause6" size="2" />
+				</row>
+				<row flex="1">
+					<label control="scrolling-endpause-textbox6" value="Scrolling End Pause:" />
+					<textbox id="scrolling-endpause-textbox6" type="number" preference="selfscroll-scrolling-endpause6" size="2" />
+				</row>
+				<row flex="1">
+					<label value="Scrolling End Action:" />
+					<radiogroup preference="selfscroll-action6">
+						<radio id="stop6" value="stop" label="Stop scrolling" />
+						<radio id="reverse6" value="reverse" label="Reverse the scroll direction" />
+						<radio id="top6" value="top" label="Return to the top of the page" />
+						<radio id="refresh6" value="refresh" label="Reload the page" />
+					</radiogroup>
+				</row>
+				<row flex="1">
+					<label control="scrolling-saveas-textbox6" value="Save As:" />
+					<textbox id="scrolling-saveas-textbox6" preference="selfscroll-scrolling-saveas6" />
+				</row>
+			</rows>
+		</grid>
+		
+	</prefpane>
+	
+</prefwindow>

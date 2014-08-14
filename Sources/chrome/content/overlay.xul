@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overlay id="selfscroll-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+	<script type="text/javascript" src="chrome://selfscroll/content/selfscroll.js"></script>
+	
+	<window>
+		<tooltip id="selfscroll-statusbar-tooltip" noautohide="true" orient="vertical" position="before_start" style="padding:2px;">
+			<label value="SelfScroll" style="font-weight: bold;" />
+			<label value="Left-Click: Enable/Disable SelfScroll" />
+			<label value="Right-Click: SelfScroll Preferences" />
+			<label value="Middle-Click: Reverse scroll direction (only if 'reverse' mode is enabled)" />
+		</tooltip>
+	</window>
+	
+	<!-- Statusbar icon -->
+	<statusbar id="status-bar">
+		<statusbarpanel id="selfscroll_status_label">
+			<label value="SelfScroll:" />
+		</statusbarpanel>
+		<statusbarpanel id="selfscroll_status0" tooltip="selfscroll-statusbar-tooltip">
+			<image id="selfscroll_icon0" src="chrome://selfscroll/content/red.png" onclick="selfscroll.click(event, 0)" />
+		</statusbarpanel>
+		<statusbarpanel id="selfscroll_status1" tooltip="selfscroll-statusbar-tooltip">
+			<image id="selfscroll_icon1" src="chrome://selfscroll/content/red.png" onclick="selfscroll.click(event, 1)" />
+		</statusbarpanel>
+		<statusbarpanel id="selfscroll_status2" tooltip="selfscroll-statusbar-tooltip">
+			<image id="selfscroll_icon2" src="chrome://selfscroll/content/red.png" onclick="selfscroll.click(event, 2)" />
+		</statusbarpanel>
+		<statusbarpanel id="selfscroll_status3" tooltip="selfscroll-statusbar-tooltip">
+			<image id="selfscroll_icon3" src="chrome://selfscroll/content/red.png" onclick="selfscroll.click(event, 3)" />
+		</statusbarpanel>
+		<statusbarpanel id="selfscroll_status4" tooltip="selfscroll-statusbar-tooltip">
+			<image id="selfscroll_icon4" src="chrome://selfscroll/content/red.png" onclick="selfscroll.click(event, 4)" />
+		</statusbarpanel>
+		<statusbarpanel id="selfscroll_status5" tooltip="selfscroll-statusbar-tooltip">
+			<image id="selfscroll_icon5" src="chrome://selfscroll/content/red.png" onclick="selfscroll.click(event, 5)" />
+		</statusbarpanel>
+		<statusbarpanel id="selfscroll_status6" tooltip="selfscroll-statusbar-tooltip">
+			<image id="selfscroll_icon6" src="chrome://selfscroll/content/red.png" onclick="selfscroll.click(event, 6)" />
+		</statusbarpanel>
+		<statusbarpanel id="selfscroll_status7" tooltip="selfscroll-statusbar-tooltip">
+			<image id="selfscroll_icon7" src="chrome://selfscroll/content/red.png" onclick="selfscroll.click(event, 7)" />
+		</statusbarpanel>
+		<statusbarpanel id="selfscroll_status8" tooltip="selfscroll-statusbar-tooltip">
+			<image id="selfscroll_icon8" src="chrome://selfscroll/content/red.png" onclick="selfscroll.click(event, 8)" />
+		</statusbarpanel>
+		<statusbarpanel id="selfscroll_status9" tooltip="selfscroll-statusbar-tooltip">
+			<image id="selfscroll_icon9" src="chrome://selfscroll/content/red.png" onclick="selfscroll.click(event, 9)" />
+		</statusbarpanel>
+	</statusbar>
+</overlay>
