@@ -6,3 +6,4 @@ This is a Mozilla extension that allow to automatically scroll the page with a c
 Screen
 ==========
 
+![](Preview.png)
